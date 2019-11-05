@@ -36,7 +36,6 @@ $people=$_SESSION['thepreson'];
                 <li><a href="oo.php#threepage" style="color: #ffffff;">NEWS</a></li>
                 <li><a href="oo.php#fourpage" style="color: #ffffff;">INFO</a></li>
             </ul>
-<!--            <button ><a href="login.html">Close me!</a></button>-->
             <button class="md-close">CLOSE!</button>
         </div>
     </div>
@@ -77,7 +76,7 @@ $people=$_SESSION['thepreson'];
             <div class="title-text">
                 <div class="col-md-12 headfontsize">
                     <div class="menu" style="position: absolute">
-                        <a class="md-trigger" data-modal="modal-12" style="position: relative;margin-right: 120px">菜单栏 </a>
+                        <a class="md-trigger" data-modal="modal-12" style="position: relative;margin-right: 120px">MEUM </a>
                     </div>
 
                     <div class="login" >
