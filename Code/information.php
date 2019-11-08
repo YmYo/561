@@ -64,7 +64,14 @@
     </div>
 </header>
 <div class="j-menu-container"></div>
-
+    
+<div class="b-inner-page-header f-inner-page-header b-bg-header-inner-page">
+    <div class="b-inner-page-header__content">
+        <div class="container">
+            <h1 class="f-primary-l c-default">Blog Listing Left Sidebar</h1>
+        </div>
+    </div>
+</div>
 
 <script src="js/jquery/jquery-1.11.1.min.js"></script>
 <!-- bootstrap -->
