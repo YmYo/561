@@ -1,1 +1,0 @@
-start py -3 "Unit Test.py"
