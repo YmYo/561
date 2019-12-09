@@ -185,7 +185,7 @@ def test_profileupdate(doctor):
         logging.info("update error")
    
     # back to home page
-    home_btn = driver.find_element_by_css_selector("#sidebar > a:nth-child(1)").get_attribute("href")
-    driver.get(home_btn)
+    home_btn = dcotor.find_element_by_css_selector("#sidebar > a:nth-child(1)").get_attribute("href")
+    doctor.get(home_btn)
 
     logging.info("Finished all tests!!")
