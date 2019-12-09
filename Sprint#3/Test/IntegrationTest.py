@@ -348,23 +348,6 @@ def test_profileupdate(doctor):
     
     test_login(doctor, True)
 
-def test_order_h(driver, withoutSignup, uname, order):
-    if withoutSignup == True:
-        btn_url = driver.find_element_by_class_name("login").find_element_by_tag_name("a").get_attribute("href")
-        driver.get(btn_url)
-
-    id_box = driver.find_element_by_id("uname")
-    order_box = driver.find_element_by_id("order")
-
-    id_box.clear()
-    id_box.send_keys(uname)
-    order_box.clear()
-    order_box.send_keys(order)
-    sleep(1)
-
-    sbm_btn = driver.find_element_by_id("sbm_btn")
-    sbm_btn.click()
-
     sleep(2)
 
     if len(doctor.find_elements_by_class_name("logout")) > 0:
@@ -375,8 +358,8 @@ def test_order_h(driver, withoutSignup, uname, order):
         logging.info("update error")
    
     # back to home page
-    home_btn = driver.find_element_by_css_selector("#sidebar > a:nth-child(1)").get_attribute("href")
-    driver.get(home_btn)
+    home_btn = doctor.find_element_by_css_selector("#sidebar > a:nth-child(1)").get_attribute("href")
+    doctor.get(home_btn)
 
     logging.info("Finished all tests!!")
 
